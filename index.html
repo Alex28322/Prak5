@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/normilizr.css">
+</head>
+<body>    
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav container">
+                <div class="header__iconlogo-div">
+                    <a class="header__iconlogo" href="#"></a>
+                </div>
+                <div class="nav__links">
+                <div class="nav__item">FEATURES</div>
+                <div class="nav__item">PRICING</div>
+                <div class="nav__item">SERVICES</div>
+                <div class="nav__item">PARTNERS</div>
+                <button class="nav__button button">SIGN UP FREE</button>
+            </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="background container">
+            </div>
+            <div class="emails container">
+                <div class="emails__content"> 
+                    <h2 class="emails__article article">Create Stunning 
+                    Email Campaigns</h2>
+                <p class="emails__text">Create and launch email campaigns that captivate
+                    your customers in just a few clicks.</p>
+                    <div class="emaails__button-box"> 
+                <button class="emaails__button-green">TRY NOW</button>
+                <button class="emaails__button-white">GET A DEMO</button>
+            </div>
+                </div>
+                    <div class="emaails__img"></div>
+            </div>
+            <div class="customers container">
+                <h2 class="customers__article article">Reach More Customers</h2>
+                <button class="customers__button button">LEARN HOW</button>
+            </div>
+            <div class="campaigns container">
+                <div class="campaigns__box-1">
+                    <div class="compaigns__img-1"></div>
+                    <p class="campaigns__box-text">Launch campaigns but also find new customers. Our unique platform handles campaigns from start to end.</p>
+                    <a href="#" class="compaigns__link">Learn More ></a>
+                </div>
+                <div class="campaigns__box-2">
+                    <div class="compaigns__img-2"></div>
+                    <p class="campaigns__box-text">Start building and sharing with your team today. NinjaMail is renowned for its industry leading team collaboration tools.</p>
+                    <a href="#" class="compaigns__link">Learn More ></a>
+                </div>
+                <div class="compaigns__box-plan">
+                    <h2 class="compaigns__article article">The source for
+                        proven, engaging 
+                        email campaigns</h2>
+                        <p class="compaigns__text">Whether you’re a startup, small
+                            business, e-commerce store, or 
+                            want to promote your app, NinjaMail
+                            has the feature set tailored for
+                            your business. 
+                            </p>
+                </div>
+            </div>
+                <div class="others container">
+                    <div class="others__boxes">
+                    <div class="others__box-left-div">
+                        <a class="others__box-left" href="#">
+                    <div class="others__box-article ">Frankie</div>
+                    <div class="others__box-text">Member since 2016</div>    
+                </a>
+                    </div>
+                    <div class="others__box-mid-div">
+                        <a class="others__box-mid" href="#">
+                    <div class="others__box-article ">Camile</div>
+                    <div class="others__box-text">Member since 2012</div>   
+                </a>
+                    </div>
+                    <div class="others__box-right-div">
+                        <a class="others__box-right" href="#">
+                    <div class="others__box-article ">Elayne</div>
+                    <div class="others__box-text">Member since 2018</div>
+                </a>
+                    </div>
+                </div>
+                   <h2 class="others__article article">Learn how others are reaching their audience easier than ever before.</h2>
+                   <form id="emailSent">
+                   <div class="email__box">
+                    <input class="email__input" type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="email__button">JOIN OUR LIST</button>
+                    <div id="successMessage" class="email__recived">Thanks! Email received.</div>
+                </div>
+            </form>
+            <script>
+            document.getElementById('emailSent').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+            
+                // Here you can add your AJAX request to send the email
+                // For demonstration, we assume the email is sent successfully
+            
+                // Display the success message
+                document.getElementById('successMessage').style.color = '#4BA87D';
+            });</script>
+                </div>
+                <div class="brands container">
+                    <h2 class="brands__article article">All the best brands
+                        already use us.</h2>
+                        <div class="brands__box">
+                            <div class="brands__img knight"></div>
+                            <div class="brands__img dragon"></div>
+                            <div class="brands__img quest"></div>
+                            <div class="brands__img radiotee"></div>
+                            <div class="brands__img gamecommerce"></div>
+                        </div>
+                </div>
+                <div class="start container">
+                    <div class="start__article article">Get started today!</div>
+                    <button class="start__button button">PICK A PLAN</button>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__iconlogo"></div>
+            <div class="footer__list">
+                <div class="footer__list-item">
+                    <a href="#" class="footer__link">Features</a>
+                    <a href="#" class="footer__link">Pricing</a>
+                    <a href="#" class="footer__link">Services</a>
+                    <a href="#" class="footer__link">Partners</a>
+                </div>
+                <div class="footer__list-item">
+                    <a href="#" class="footer__link">About Us</a>
+                    <a href="#" class="footer__link">Tutorials</a>
+                    <a href="#" class="footer__link">Resources</a>
+                    <a href="#" class="footer__link">Help Center</a>
+                    <a href="#" class="footer__link">Templates</a>
+                    <a href="#" class="footer__link">Case Studies</a>
+                </div>
+            </div>
+            <div class="footer__list">
+                <div class="footer__list-item">
+                    <a href="#" class="footer__link">Medium</a>
+                    <a href="#" class="footer__link">Twitter</a>
+                    <a href="#" class="footer__link">Facebook</a>
+                    <a href="#" class="footer__link">Instagram</a>
+                    <a href="#" class="footer__link">LinkedIn</a>
+                </div>
+                <div class="footer__list-item">
+                    <a href="#" class="footer__link">Contact Us</a>
+                    <a href="#" class="footer__link">Slack</a>
+                    <a href="#" class="footer__link">Jobs</a>
+                </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="rights">
+                <div class="rights__text">NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All rights reserved.</div>
+                <div class="rights__item">
+                <div class="rights__text">Terms & Conditions</div>
+                <div class="rights__text">Privacy Policy</div>
+            </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

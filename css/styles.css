@@ -1,0 +1,969 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.nav {
+  width: 86.2%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.nav__links {
+  width: 54.7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.header__iconlogo {
+  display: block;
+  width: 270px;
+  height: 80px;
+  background: url("../img/NinjaMail Logo.svg") center no-repeat;
+  background-size: contain;
+}
+
+.nav__item {
+  position: relative;
+  width: 110px;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.nav__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  left: 50%;
+  background-color: #4BA87D;
+  bottom: -10px;
+  transition: width 0.3s;
+  transform: translate(-50%);
+}
+
+.nav__item:hover::after {
+  width: 100%;
+}
+
+.nav__button {
+  width: 170px;
+  height: 40px;
+  background-color: #4BA87D;
+  color: #ffffff;
+  font-weight: 800;
+  border: transparent;
+  transition: width 0.3s;
+  margin-top: -20px;
+}
+
+.nav__button:hover {
+  font-weight: bolder;
+}
+
+@media (max-width: 970px) {
+  .nav {
+    width: 100%;
+  }
+  .header__iconlogo {
+    width: 173px;
+    height: 53px;
+  }
+  .nav__links {
+    font-size: 11px;
+    width: 58%;
+    margin-right: 15px;
+  }
+  .nav__item {
+    width: 71px;
+  }
+  .nav__item::after {
+    bottom: -5px;
+  }
+  .nav__button {
+    width: 110px;
+    height: 25px;
+    margin-top: -20px;
+  }
+}
+@media (max-width: 750px) {
+  .header__iconlogo {
+    width: 155px;
+  }
+  .nav {
+    padding-top: 10px;
+  }
+  .nav__item {
+    display: none;
+  }
+  .nav__links {
+    width: 35%;
+  }
+}
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 1440px;
+  height: 2648px;
+  background: url("../img/background.svg") top center no-repeat;
+  background-size: contain;
+  top: 0;
+  z-index: -1;
+}
+
+.emails {
+  position: relative;
+  padding-top: 100px;
+  width: 75%;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 330px;
+  max-width: 1088px;
+}
+
+.emails__content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.emails__article {
+  font-size: 59px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.article {
+  font-weight: 800;
+  font-family: "Playfair Display", serif;
+}
+
+.emails__text {
+  font-size: 19px;
+  margin: 30px 0;
+  line-height: 130%;
+  font-weight: 500;
+}
+
+.emaails__img {
+  position: absolute;
+  background: url("../img/office__lady.png") center no-repeat;
+  width: 680px;
+  height: 383px;
+  right: 0;
+  top: 103px;
+  z-index: -1;
+}
+
+.emaails__button-green {
+  width: 200px;
+  height: 65px;
+  padding: 20px 40px;
+  font-size: 21px;
+  background-color: #4BA87D;
+  border: transparent;
+  color: #ffffff;
+  font-weight: bolder;
+  margin-right: 45px;
+}
+
+.emaails__button-green:hover {
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.emaails__button-white {
+  width: 200px;
+  height: 65px;
+  padding: 20px 25px;
+  font-size: 21px;
+  border: #4BA87D 2px solid;
+  color: #4BA87D;
+  font-weight: bolder;
+}
+
+.emaails__button-white:hover {
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.customers {
+  width: 944px;
+  background: url("../img/video.png") center no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customers__article {
+  margin-top: 165px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+}
+
+.customers__button {
+  width: 200px;
+  height: 65px;
+  padding: 20px 20px;
+  font-size: 21px;
+  font-weight: bolder;
+  color: #4BA87D;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 160px;
+  border: transparent;
+}
+
+.customers__button:hover {
+  font-weight: 800;
+  transition: 0.3s;
+}
+
+.campaigns {
+  width: 76%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  max-width: 1100px;
+}
+
+.campaigns__box-1 {
+  width: 320px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.campaigns__box-2 {
+  margin-top: 90px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.compaigns__img-1 {
+  width: 100%;
+  height: 253px;
+  background: url("../img/asian.png") center top no-repeat;
+  background-size: cover;
+}
+
+.compaigns__img-2 {
+  width: 100%;
+  height: 253px;
+  background: url("../img/group.png") center top no-repeat;
+  background-size: cover;
+}
+
+.campaigns__box-text {
+  font-size: 16px;
+  margin: 30px 30px 20px 30px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.compaigns__link {
+  width: 70%;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4BA87D;
+  margin: 25px 30px 30px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.compaigns__link:hover {
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+.compaigns__box-plan {
+  width: 33.5%;
+  margin-top: 140px;
+}
+
+.compaigns__article {
+  font-size: 44px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.compaigns__text {
+  width: 88%;
+  font-size: 19px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.others {
+  width: 76%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 55px;
+  max-width: 1090px;
+}
+
+.others__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.others__box-left {
+  display: inline-block;
+  width: 342px;
+  height: 240px;
+  background: url("../img/man.png") center no-repeat;
+  background-size: contain;
+  text-decoration: none;
+}
+
+.others__box-mid {
+  display: inline-block;
+  width: 342px;
+  height: 240px;
+  background: url("../img/florist.png") center no-repeat;
+  background-size: contain;
+  text-decoration: none;
+}
+
+.others__box-right {
+  display: inline-block;
+  width: 342px;
+  height: 240px;
+  background: url("../img/Elayne.png") center no-repeat;
+  background-size: contain;
+  text-decoration: none;
+}
+
+.others__box-left:hover {
+  box-shadow: 0px 0px 27px 7px rgb(173, 173, 173);
+  transition: 0.15s;
+}
+
+.others__box-mid:hover {
+  box-shadow: 0px 0px 27px 7px rgb(173, 173, 173);
+  transition: 0.15s;
+}
+
+.others__box-right:hover {
+  box-shadow: 0px 0px 27px 7px rgb(173, 173, 173);
+  transition: 0.15s;
+}
+
+.others__box-article {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 150px 0 10px 25px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+
+.others__box-text {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 0px 0 30px 25px;
+}
+
+.others__article {
+  width: 83%;
+  font-size: 44px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.email__box {
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+}
+
+.email__button {
+  width: 225px;
+  height: 65px;
+  padding: 20px 25px;
+  font-size: 21px;
+  font-weight: bolder;
+  background-color: #4BA87D;
+  border: transparent;
+  color: #ffffff;
+}
+
+.email__button:hover {
+  font-weight: 800;
+}
+
+.email__input {
+  width: 380px;
+  margin-right: 20px;
+  border: #9F9F9F solid 1px;
+  padding: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.email__recived {
+  font-size: 21px;
+  font-weight: 500;
+  color: transparent;
+  padding: 20px;
+  width: 100%;
+}
+
+.brands {
+  width: 66%;
+  text-align: center;
+  padding-bottom: 150px;
+  width: 944px;
+}
+
+.brands__article {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-size: 44px;
+  width: 41%;
+}
+
+.brands__box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.knight {
+  width: 160px;
+  height: 33px;
+  background: url("../img/knight.svg") center no-repeat;
+  background-size: contain;
+}
+
+.dragon {
+  width: 85px;
+  height: 44px;
+  background: url("../img/dragon.svg") center no-repeat;
+  background-size: contain;
+}
+
+.quest {
+  width: 145px;
+  height: 48px;
+  background: url("../img/quest.svg") center no-repeat;
+  background-size: contain;
+}
+
+.radiotee {
+  width: 141px;
+  height: 25px;
+  background: url("../img/radiotee.svg") center no-repeat;
+  background-size: contain;
+}
+
+.gamecommerce {
+  width: 138px;
+  height: 22px;
+  background: url("../img/gamecommerce.svg") center no-repeat;
+  background-size: contain;
+}
+
+.start {
+  width: 100%;
+  background-color: #4BA87D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__article {
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.start__button {
+  width: 200px;
+  height: 65px;
+  padding: 20px 20px;
+  font-size: 21px;
+  font-weight: bolder;
+  color: #4BA87D;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 100px;
+  border: transparent;
+  padding-bottom: 50px;
+}
+
+.start__button:hover {
+  font-weight: 800;
+}
+
+@media (max-width: 970px) {
+  .background {
+    width: 1174px;
+    height: 1705px;
+  }
+  .emails {
+    width: 92%;
+    padding-bottom: 90px;
+    padding-top: 50px;
+  }
+  .emails__article {
+    font-size: 38px;
+  }
+  .emails__text {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .emaails__button-green {
+    width: 131px;
+    height: 42px;
+    font-size: 13px;
+    padding: 13px 30px;
+    margin-right: 25px;
+  }
+  .emaails__button-white {
+    width: 131px;
+    height: 42px;
+    font-size: 13px;
+    padding: 13px 18px;
+  }
+  .emaails__img {
+    width: 445px;
+    height: 250px;
+    background-size: cover;
+    top: 60px;
+  }
+  .customers {
+    width: 616px;
+    background-size: contain;
+  }
+  .customers__article {
+    font-size: 38px;
+  }
+  .customers__button {
+    font-size: 13px;
+    width: 132px;
+    height: 42px;
+    padding: 15px 20px;
+  }
+  .campaigns {
+    width: 92%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+  .campaigns__box-1 {
+    width: 209px;
+  }
+  .compaigns__img-1 {
+    width: 277px;
+    height: 166px;
+    background-size: auto;
+  }
+  .campaigns__box-2 {
+    width: 209px;
+  }
+  .compaigns__img-2 {
+    width: 277px;
+    height: 162px;
+    background-size: auto;
+  }
+  .compaigns__box-plan {
+    margin-top: 120px;
+  }
+  .campaigns__box-text {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 30px 30px 0px 30px;
+  }
+  .compaigns__article {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .compaigns__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .compaigns__link {
+    font-size: 12px;
+    margin: 0 30px 30px;
+  }
+  .others {
+    width: 91%;
+    padding-bottom: 30px;
+  }
+  .others__box-left {
+    width: 223px;
+    height: 157px;
+  }
+  .others__boxes {
+    margin-bottom: 30px;
+  }
+  .others__box-mid {
+    width: 223px;
+    height: 157px;
+  }
+  .others__box-right {
+    width: 223px;
+    height: 157px;
+  }
+  .others__box-article {
+    margin: 100px 0 0 15px;
+    font-size: 22px;
+  }
+  .others__box-text {
+    font-size: 12px;
+    margin: 0px 0 10px 15px;
+  }
+  .others__article {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .email__input {
+    width: 255px;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .email__button {
+    width: 144px;
+    height: 42px;
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+  .email__recived {
+    padding: 15px;
+    font-size: 13px;
+  }
+  .brands {
+    width: 80%;
+    padding-bottom: 95px;
+  }
+  .brands__article {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .knight {
+    width: 104px;
+    height: 22px;
+  }
+  .dragon {
+    width: 55px;
+    height: 29px;
+  }
+  .quest {
+    width: 94px;
+    height: 31px;
+  }
+  .radiotee {
+    width: 92px;
+    height: 17px;
+  }
+  .gamecommerce {
+    width: 91px;
+    height: 15px;
+  }
+  .start__article {
+    font-size: 42px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+  .start__button {
+    width: 131px;
+    height: 42px;
+    padding: 13px 23px;
+    margin-bottom: 55px;
+    font-size: 13px;
+  }
+  .footer {
+    padding-top: 45px;
+  }
+}
+@media (max-width: 750px) {
+  .emails {
+    width: 94%;
+    padding-bottom: 40px;
+    padding-top: 0;
+  }
+  .emails__content {
+    width: 100%;
+  }
+  .emails__article {
+    font-size: 36px;
+    margin-bottom: 80px;
+    margin-top: 0;
+    width: 94%;
+    line-height: 46px;
+  }
+  .emails__text {
+    font-size: 14px;
+    margin-bottom: 5px;
+    max-width: 300px;
+  }
+  .emaails__button-green {
+    margin-right: 15px;
+  }
+  .customers {
+    width: 304px;
+  }
+  .emaails__img {
+    width: 300px;
+    height: 169px;
+    top: 50px;
+  }
+  .campaigns {
+    padding-bottom: 60px;
+    width: 94%;
+  }
+  .customers__article {
+    font-size: 22px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+  .customers__button {
+    width: 65px;
+    height: 21px;
+    font-size: 6px;
+    margin-bottom: 50px;
+    padding: 10px 10px;
+  }
+  .campaigns__box-2 {
+    margin-top: 10px;
+    margin-left: 80px;
+  }
+  .compaigns__box-plan {
+    width: 76%;
+  }
+  .compaigns__box-plan {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .compaigns__link {
+    margin-bottom: 10px;
+  }
+  .others {
+    padding-bottom: 60px;
+  }
+  .others__boxes {
+    justify-content: space-around;
+    margin-bottom: 55px;
+  }
+  .others__box-left {
+    margin-bottom: 20px;
+  }
+  .others__box-mid {
+    margin-bottom: 20px;
+  }
+  .others__article {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .email__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .email__input {
+    width: 223px;
+    margin: 0 auto;
+  }
+  .email__button {
+    order: 1;
+    margin: 0 auto;
+  }
+  .email__recived {
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  .brands {
+    width: 93%;
+    padding-bottom: 10px;
+  }
+  .brands__article {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .brands__box {
+    width: 85%;
+    justify-content: space-around;
+  }
+  .knight {
+    margin-bottom: 30px;
+  }
+  .dragon {
+    margin-bottom: 30px;
+  }
+  .quest {
+    margin-bottom: 30px;
+  }
+  .radiotee {
+    margin-bottom: 30px;
+  }
+  .gamecommerce {
+    margin-bottom: 30px;
+  }
+}
+.footer {
+  width: 67.2%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 70px;
+  max-width: 1000x;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.footer__iconlogo {
+  width: 200px;
+  height: 60px;
+  background: url("../img/NinjaMail Logo.svg") center no-repeat;
+  background-size: contain;
+  margin-right: 15%;
+}
+
+.footer__list {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer__list-item {
+  width: 41%;
+}
+
+.footer__link {
+  padding-bottom: 10px;
+  font-size: 19px;
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
+.footer__line {
+  width: 100%;
+  background-color: #707070;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.rights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 926px;
+  margin: 0 auto;
+  margin: 40px auto;
+}
+
+.rights__text {
+  font-size: 15px;
+}
+
+.rights__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 30%;
+}
+
+@media (max-width: 970px) {
+  .footer {
+    width: 85%;
+    padding-top: 50px;
+  }
+  .footer__iconlogo {
+    width: 127px;
+    height: 37px;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
+  .rights {
+    margin: 25px auto;
+    width: 90%;
+  }
+  .footer__line {
+    margin-top: 30px;
+  }
+  .rights__text {
+    font-size: 9px;
+  }
+}
+@media (max-width: 750px) {
+  .footer {
+    width: 90%;
+    padding-top: 60px;
+  }
+  .footer__iconlogo {
+    margin-right: 50%;
+  }
+  .footer__list {
+    width: 50%;
+    padding-top: 10px;
+  }
+  .footer__list-item {
+    width: 100%;
+  }
+  .rights__item {
+    margin-top: 30px;
+  }
+  .footer__link {
+    padding-bottom: 7px;
+  }
+  .rights {
+    width: 65%;
+    margin: 20px 0;
+  }
+  .rights__item {
+    width: 50%;
+  }
+  .rights__text {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

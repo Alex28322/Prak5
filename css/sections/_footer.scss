@@ -1,0 +1,114 @@
+.footer {
+    width: 67.2%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    max-width: 1000x;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+}
+.footer__iconlogo {
+    width: 200px;
+    height: 60px;
+    background: url("../img/NinjaMail\ Logo.svg") center no-repeat;
+    background-size: contain;
+    margin-right: 15%;
+}
+.footer__list {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer__list-item {
+    width: 41%;
+}
+.footer__link {
+    padding-bottom: 10px;
+    font-size: 19px;
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+.footer__line {
+width: 100%;
+background-color: #707070;
+height: 2px;
+margin: 0 auto;
+margin-top: 70px;
+}
+.rights {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 100%;
+max-width: 926px;
+margin: 0 auto;
+margin: 40px auto;
+}
+.rights__text {
+font-size: 15px;
+}
+.rights__item {
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+width: 30%;
+}
+@media (max-width:970px){
+    .footer{
+        width: 85%;
+        padding-top: 50px;
+    }
+    .footer__iconlogo{
+        width: 127px;
+        height: 37px;
+    }
+    .footer__link{
+        font-size: 12px;
+    }
+.rights {
+margin: 25px auto;
+width: 90%;
+}
+    .footer__line{
+        margin-top: 30px;
+    }
+    .rights__text{
+        font-size: 9px;
+    }
+}
+@media(max-width:750px){
+    .footer{
+        width: 90%;
+        padding-top: 60px;
+    }
+    .footer__iconlogo{
+        margin-right: 50%;
+    }
+    .footer__list{
+        width: 50%;
+        padding-top: 10px;
+    }
+    .footer__list-item{
+        width: 100%;
+    }
+    .rights__item{
+        margin-top: 30px;
+    }
+    .footer__link{
+        padding-bottom: 7px;
+    }
+    .rights{
+        width: 65%;
+        margin: 20px 0;
+    }
+    .rights__item{
+        width: 50%;
+    } 
+    .rights__text{
+        margin-bottom: 10px;
+    }
+}

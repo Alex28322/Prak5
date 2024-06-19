@@ -1,0 +1,112 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+  max-width: 1440px;
+  width: 100%;
+}
+.nav {
+    width: 86.2%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 20px;
+}
+.nav__links{
+width: 54.7%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: "Raleway", sans-serif;
+font-size: 17px;
+font-weight: bolder;
+}
+.container {
+}
+.header__iconlogo{
+    display: block;
+    width: 270px;
+    height: 80px;
+    background: url("../img/NinjaMail\ Logo.svg") center no-repeat;
+    background-size: contain;
+}
+.nav__item {
+    position: relative;
+    width: 110px;
+    text-align: center;
+    margin-top: -20px;
+}
+.nav__item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    left: 50%;
+    background-color: #4BA87D;
+    bottom: -10px;
+    transition: width 0.3s ;
+    transform: translate(-50%);
+}
+.nav__item:hover::after{
+width: 100%;
+}
+.nav__button {
+    width: 170px;
+    height: 40px;
+    background-color: #4BA87D;
+    color: #ffffff;
+    font-weight: 800;
+    border: transparent;
+    transition: width 0.3s;
+    margin-top: -20px;
+}
+.nav__button:hover{
+    font-weight: bolder;
+}
+.button {
+}
+@media(max-width:970px){
+    .nav{
+        width: 100%;
+    }
+    .header__iconlogo{
+        width: 173px;
+        height: 53px;
+    }
+    .nav__links{
+        font-size: 11px;
+        width: 58%;
+        margin-right: 15px;
+    }
+    .nav__item{
+        width: 71px;
+    }
+    .nav__item::after{
+        bottom: -5px;
+    }
+    .nav__button{
+        width: 110px;
+        height: 25px;
+        margin-top: -20px;
+    }
+}
+@media(max-width:750px){
+    .header__iconlogo{
+width: 155px;
+    }
+    .nav{
+        padding-top: 10px;
+    }
+    .nav__item{
+        display: none;
+
+    }
+    .nav__links{
+        width: 35%;
+    }
+}
